@@ -1,0 +1,3 @@
+function matchRow(d,s){return (!s.os||d.os.split(' ').includes(s.os))&&(!s.free||d.free==='y')&&(!s.ndi||d.ndi==='y')&&(!s.ss||d.ss==='y')&&d.name.includes((s.q||'').toLowerCase().trim());}
+if(typeof module!=='undefined')module.exports={matchRow};
+if(typeof document!=='undefined'){const g=i=>document.getElementById(i);const f=()=>{const s={os:g('os').value,free:g('free').checked,ndi:g('ndi').checked,ss:g('ss').checked,q:g('q').value};let c=0;document.querySelectorAll('tbody tr').forEach(r=>{const ok=matchRow(r.dataset,s);r.hidden=!ok;c+=ok});g('n').textContent=c+' apps'};document.querySelectorAll('.box select,.box input').forEach(x=>x.oninput=f);f();}

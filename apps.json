@@ -1,12 +1,352 @@
 [
-{"slug":"propresenter","name":"ProPresenter","vendor":"Renewed Vision","url":"https://renewedvision.com/propresenter","pricing_model":"Subscription","price":"$29/mo or $289/yr per seat; Campus (20 seats) $59/mo or $649/yr","os":["macOS","Windows"],"ndi":"Yes (output)","outputs":"Up to 8 unique outputs","songselect":"Yes (direct import + auto-reporting; needs CCLI license + SongSelect Advanced)","free_tier":"No (free trial)","verified":"2026-10-16","sources":["https://renewedvision.com/propresenter","https://support.renewedvision.com/hc/en-us/articles/35579747176083-Renewed-Vision-Pricing-and-Renewal-Process","https://support.renewedvision.com/hc/en-us/articles/360041815033-SongSelect-and-ProPresenter"]},
-{"slug":"proclaim","name":"Proclaim","vendor":"Faithlife / Logos","url":"https://proclaim.logos.com","pricing_model":"Subscription (unlimited seats & installs)","price":"$269.99/yr (On Air); $399.99/yr (+Pro Media); $999.99/yr (+Partner Media)","os":["macOS","Windows"],"ndi":"Yes (NDI & SDI output, all plans)","outputs":"Unknown","songselect":"Yes","free_tier":"No (14-day free trial)","verified":"2026-10-16","sources":["https://proclaim.logos.com/pricing"]},
-{"slug":"easyworship","name":"EasyWorship","vendor":"EasyWorship","url":"https://easyworship.com","pricing_model":"Subscription (campus license)","price":"Basic $210/yr ($17.50/mo); Premium $330/yr ($27.50/mo); vendor notes pricing varies by attendance","os":["Windows"],"ndi":"Yes (input & output)","outputs":"Unknown","songselect":"Yes (built-in, auto-reporting)","free_tier":"Unknown","verified":"2026-10-16","sources":["https://easyworship.com/software/pricing","https://www.easyworship.com/software/streaming"],"notes":"OS listed as Windows based on vendor positioning; confirm macOS status."},
-{"slug":"mediashout","name":"MediaShout 7","vendor":"MediaShout","url":"https://mediashout.com","pricing_model":"One-time purchase + optional membership","price":"$599 one-time (Site); $698 Essentials incl. 1st yr Plus (renews $199/yr); $798 Complete (renews $299/yr)","os":["Windows"],"ndi":"Yes (output)","outputs":"Unknown","songselect":"Yes (integration + auto-reporting)","free_tier":"Unknown","verified":"2026-10-16","sources":["https://mediashout.com/pricing/","https://mediashout.com/features/"]},
-{"slug":"openlp","name":"OpenLP","vendor":"OpenLP project (open source)","url":"https://openlp.org","pricing_model":"Free, open source","price":"Free","os":["Windows","macOS","Linux","FreeBSD"],"ndi":"No native support (via NDI Tools / OBS capture)","outputs":"Unknown","songselect":"Partial (import of downloaded SongSelect files; direct import has had issues)","free_tier":"Yes (fully free)","verified":"2026-10-16","sources":["https://openlp.org/","https://manual.openlp.org/songs.html","https://manual.openlp.org/faq.html"]},
-{"slug":"freeshow","name":"FreeShow","vendor":"FreeShow (non-profit, open source)","url":"https://freeshow.app","pricing_model":"Free, open source (donation-funded)","price":"Free","os":["Windows","macOS","Linux"],"ndi":"Yes (output)","outputs":"Unlimited (\"as many outputs as you want\")","songselect":"Partial (copy/paste lyrics into Quick Lyrics; no direct integration)","free_tier":"Yes (fully free)","verified":"2026-10-16","sources":["https://freeshow.app/","https://freeshow.app/docs/features","https://freeshow.app/docs/faq"],"notes":"OS list from vendor platform list; verify on download page."},
-{"slug":"worshiptools-presenter","name":"WorshipTools Presenter","vendor":"WorshipTools","url":"https://www.worshiptools.com/en-us/presenter","pricing_model":"Freemium","price":"Free; paid plan price unknown","os":["macOS","Windows"],"ndi":"Yes (output)","outputs":"Unlimited on paid plan; multiple outputs require upgrade","songselect":"Yes (lyrics, chords & videos)","free_tier":"Yes (free forever, unlimited installs)","verified":"2026-10-16","sources":["https://www.worshiptools.com/en-us/presenter"]},
-{"slug":"holyrics","name":"Holyrics","vendor":"Holyrics (Brazil)","url":"https://www.holyrics.com.br","pricing_model":"Freemium","price":"Free; Basic $5/mo; Advanced $10/mo; Advanced+Worshipwide $25/mo (per third-party listings of vendor page)","os":["Windows","macOS","Linux"],"ndi":"Unknown","outputs":"Unknown","songselect":"Unknown","free_tier":"Yes","verified":"2026-10-16","sources":["https://www.holyrics.com.br/","https://holyrics.com.br/faq"],"notes":"Paid prices not yet confirmed directly on vendor site; requires Java 8 (reported)."},
-{"slug":"quelea","name":"Quelea","vendor":"Quelea project (open source)","url":"https://quelea.org","pricing_model":"Free, open source","price":"Free","os":["Windows","macOS","Linux"],"ndi":"Unknown","outputs":"Unknown (has separate stage view)","songselect":"No direct import (USR importer removed; paste text)","free_tier":"Yes (fully free)","verified":"2026-10-16","sources":["https://quelea.org/","https://quelea.discourse.group/t/songselect/163"]},
-{"slug":"videopsalm","name":"VideoPsalm","vendor":"VideoPsalm","url":"https://www.videopsalm.com","pricing_model":"Free","price":"Free","os":["Windows"],"ndi":"No native support documented (via OBS capture)","outputs":"Unknown","songselect":"Unknown","free_tier":"Yes (fully free)","verified":"2026-10-16","sources":["https://www.videopsalm.com/"]}
+ {
+  "slug": "propresenter",
+  "name": "ProPresenter",
+  "vendor": "Renewed Vision",
+  "url": "https://renewedvision.com/propresenter",
+  "pricing_model": "Subscription",
+  "price": "$29/mo or $289/yr per seat; Campus (20 seats) $59/mo or $649/yr",
+  "os": [
+   "macOS",
+   "Windows"
+  ],
+  "ndi": "Yes (output)",
+  "outputs": "Up to 8 unique outputs",
+  "songselect": "Yes (direct import + auto-reporting; needs CCLI license + SongSelect Advanced)",
+  "free_tier": "No (free trial)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://renewedvision.com/propresenter",
+   "https://support.renewedvision.com/hc/en-us/articles/35579747176083-Renewed-Vision-Pricing-and-Renewal-Process",
+   "https://support.renewedvision.com/hc/en-us/articles/360041815033-SongSelect-and-ProPresenter"
+  ]
+ },
+ {
+  "slug": "proclaim",
+  "name": "Proclaim",
+  "vendor": "Faithlife / Logos",
+  "url": "https://proclaim.logos.com",
+  "pricing_model": "Subscription (unlimited seats & installs)",
+  "price": "$269.99/yr (On Air); $399.99/yr (+Pro Media); $999.99/yr (+Partner Media)",
+  "os": [
+   "macOS",
+   "Windows"
+  ],
+  "ndi": "Yes (NDI & SDI output, all plans)",
+  "outputs": "Unknown",
+  "songselect": "Yes",
+  "free_tier": "No (14-day free trial)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://proclaim.logos.com/pricing"
+  ]
+ },
+ {
+  "slug": "easyworship",
+  "name": "EasyWorship",
+  "vendor": "EasyWorship",
+  "url": "https://easyworship.com",
+  "pricing_model": "Subscription (campus license)",
+  "price": "Basic $210/yr ($17.50/mo); Premium $330/yr ($27.50/mo); vendor notes pricing varies by attendance",
+  "os": [
+   "Windows",
+   "macOS"
+  ],
+  "ndi": "Yes (input & output)",
+  "outputs": "Unknown",
+  "songselect": "Yes (built-in, auto-reporting)",
+  "free_tier": "No (free trial of EasyWorship 8)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://easyworship.com/software/pricing",
+   "https://www.easyworship.com/software/streaming"
+  ]
+ },
+ {
+  "slug": "mediashout",
+  "name": "MediaShout 7",
+  "vendor": "MediaShout",
+  "url": "https://mediashout.com",
+  "pricing_model": "One-time purchase + optional membership",
+  "price": "$599 one-time (Site); $698 Essentials incl. 1st yr Plus (renews $199/yr); $798 Complete (renews $299/yr)",
+  "os": [
+   "Windows"
+  ],
+  "ndi": "Yes (output)",
+  "outputs": "Unknown",
+  "songselect": "Yes (integration + auto-reporting)",
+  "free_tier": "Unknown",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://mediashout.com/pricing/",
+   "https://mediashout.com/features/"
+  ]
+ },
+ {
+  "slug": "openlp",
+  "name": "OpenLP",
+  "vendor": "OpenLP project (open source)",
+  "url": "https://openlp.org",
+  "pricing_model": "Free, open source",
+  "price": "Free",
+  "os": [
+   "Windows",
+   "macOS",
+   "Linux",
+   "FreeBSD"
+  ],
+  "ndi": "No native support (via NDI Tools / OBS capture)",
+  "outputs": "Unknown",
+  "songselect": "Partial (import of downloaded SongSelect files; direct import has had issues)",
+  "free_tier": "Yes (fully free)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://openlp.org/",
+   "https://manual.openlp.org/songs.html",
+   "https://manual.openlp.org/faq.html"
+  ]
+ },
+ {
+  "slug": "freeshow",
+  "name": "FreeShow",
+  "vendor": "FreeShow (non-profit, open source)",
+  "url": "https://freeshow.app",
+  "pricing_model": "Free, open source (donation-funded)",
+  "price": "Free",
+  "os": [
+   "Windows",
+   "macOS",
+   "Linux"
+  ],
+  "ndi": "Yes (output)",
+  "outputs": "Unlimited (\"as many outputs as you want\")",
+  "songselect": "Partial (copy/paste lyrics into Quick Lyrics; no direct integration)",
+  "free_tier": "Yes (fully free)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://freeshow.app/",
+   "https://freeshow.app/docs/features",
+   "https://freeshow.app/docs/faq"
+  ],
+  "notes": "OS list from vendor platform list; verify on download page."
+ },
+ {
+  "slug": "worshiptools-presenter",
+  "name": "WorshipTools Presenter",
+  "vendor": "WorshipTools",
+  "url": "https://www.worshiptools.com/en-us/presenter",
+  "pricing_model": "Freemium",
+  "price": "Free; paid plan price unknown",
+  "os": [
+   "macOS",
+   "Windows"
+  ],
+  "ndi": "Yes (output)",
+  "outputs": "Unlimited on paid plan; multiple outputs require upgrade",
+  "songselect": "Yes (lyrics, chords & videos)",
+  "free_tier": "Yes (free forever, unlimited installs)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://www.worshiptools.com/en-us/presenter",
+   "https://www.worshiptools.com/en-us/pricing"
+  ],
+  "notes": "Paid plans are Pro and Pro Plus; prices load dynamically on the vendor pricing page and could not be read, so left unknown. Multiple output screens require Pro."
+ },
+ {
+  "slug": "holyrics",
+  "name": "Holyrics",
+  "vendor": "Holyrics (Brazil)",
+  "url": "https://www.holyrics.com.br",
+  "pricing_model": "Freemium",
+  "price": "Free; Basic $5/mo; Advanced $10/mo; Advanced+Worshipwide $25/mo (per third-party listings of vendor page)",
+  "os": [
+   "Windows",
+   "macOS",
+   "Linux"
+  ],
+  "ndi": "Unknown",
+  "outputs": "Unknown",
+  "songselect": "Unknown",
+  "free_tier": "Yes",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://www.holyrics.com.br/",
+   "https://holyrics.com.br/faq"
+  ],
+  "notes": "Paid prices not yet confirmed directly on vendor site; requires Java 8 (reported)."
+ },
+ {
+  "slug": "quelea",
+  "name": "Quelea",
+  "vendor": "Quelea project (open source)",
+  "url": "https://quelea.org",
+  "pricing_model": "Free, open source",
+  "price": "Free",
+  "os": [
+   "Windows",
+   "macOS",
+   "Linux"
+  ],
+  "ndi": "Unknown",
+  "outputs": "Unknown (has separate stage view)",
+  "songselect": "No direct import (USR importer removed; paste text)",
+  "free_tier": "Yes (fully free)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://quelea.org/",
+   "https://quelea.discourse.group/t/songselect/163"
+  ]
+ },
+ {
+  "slug": "videopsalm",
+  "name": "VideoPsalm",
+  "vendor": "VideoPsalm",
+  "url": "https://www.videopsalm.com",
+  "pricing_model": "Free",
+  "price": "Free",
+  "os": [
+   "Windows"
+  ],
+  "ndi": "No native support documented (via OBS capture)",
+  "outputs": "Unknown",
+  "songselect": "Unknown",
+  "free_tier": "Yes (fully free)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://www.videopsalm.com/"
+  ]
+ },
+ {
+  "slug": "songshow-plus",
+  "name": "SongShow Plus",
+  "vendor": "R-Technics / GoFishMedia",
+  "url": "https://www.songshowplus.com",
+  "pricing_model": "One-time purchase (+ annual upgrade subscription)",
+  "price": "Ultra Edition $249 one-time (store list price $549); Basic/Pro not currently sold",
+  "os": [
+   "Windows"
+  ],
+  "ndi": "Yes (output, video only; Ultra 9.1+)",
+  "outputs": "Up to 6 screens (Ultra)",
+  "songselect": "Yes (needs SongSelect + SongShow upgrade subscription)",
+  "free_tier": "No",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://www.songshowplus.com/Store",
+   "https://www.songshowplus.com/support/article/SW28",
+   "https://www.songshowplus.com/UserGuide/related-songselect.htm",
+   "https://www.gofishmedia.net/products/songshow-plus-ultra-edition/"
+  ]
+ },
+ {
+  "slug": "songbeamer",
+  "name": "SongBeamer",
+  "vendor": "Sebastian Zierer / RDD",
+  "url": "https://www.songbeamer.com",
+  "pricing_model": "One-time license (1 yr updates)",
+  "price": "$124 (1 PC), $199 (up to 5), $299 (6+) per third-party listings of vendor page",
+  "os": [
+   "Windows",
+   "macOS"
+  ],
+  "ndi": "Yes (output, per third-party listings)",
+  "outputs": "Unknown (multi-monitor supported)",
+  "songselect": "Yes (per third-party listings)",
+  "free_tier": "No",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://www.songbeamer.com/",
+   "https://www.positioniseverything.net/tools/songbeamer/"
+  ],
+  "notes": "Vendor price/feature pages could not be fetched; figures are from third-party summaries citing songbeamer.com. macOS app lacks some features."
+ },
+ {
+  "slug": "opensong",
+  "name": "OpenSong",
+  "vendor": "OpenSong project (open source)",
+  "url": "https://opensong.org",
+  "pricing_model": "Free, open source",
+  "price": "Free",
+  "os": [
+   "Windows",
+   "macOS",
+   "Linux"
+  ],
+  "ndi": "Unknown",
+  "outputs": "Unknown",
+  "songselect": "Unknown (stores CCLI numbers)",
+  "free_tier": "Yes (fully free)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://opensong.org/",
+   "https://sourceforge.net/projects/opensong/"
+  ],
+  "notes": "SourceForge notes it is not compatible with macOS 26 (Tahoe) at this time."
+ },
+ {
+  "slug": "lyricue",
+  "name": "Lyricue",
+  "vendor": "Lyricue project (open source)",
+  "url": "https://lyricue.org",
+  "pricing_model": "Free, open source",
+  "price": "Free",
+  "os": [
+   "Linux"
+  ],
+  "ndi": "Unknown",
+  "outputs": "Unknown",
+  "songselect": "Unknown",
+  "free_tier": "Yes (fully free)",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://lyricue.org/",
+   "https://www.lyricue.org/2024/12/10/move-to-freeshow/"
+  ],
+  "notes": "Unmaintained: the author (Dec 2024) recommends moving to FreeShow."
+ },
+ {
+  "slug": "screen-monkey",
+  "name": "Screen Monkey",
+  "vendor": "Screen Monkey",
+  "url": "https://www.screenmonkey.co.uk",
+  "pricing_model": "Free (donations); Pro features exist",
+  "price": "Free download; Pro unlock price unknown",
+  "os": [
+   "Windows"
+  ],
+  "ndi": "Partial (receives NDI; NDI output is a Pro feature)",
+  "outputs": "Main + stage output",
+  "songselect": "Unknown",
+  "free_tier": "Yes",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://www.screenmonkey.co.uk/DNN/Download",
+   "https://docs.screenmonkey.org/reference/clipTypes/ndi.html",
+   "https://docs.screenmonkey.org/reference/Settings/DisplayRenderer.html"
+  ],
+  "notes": "Latest download V4.1 (2020). Vendor docs conflict on NDI output (clip doc says it cannot generate NDI; renderer doc lists NDI output as Pro)."
+ },
+ {
+  "slug": "verseview",
+  "name": "VerseVIEW",
+  "vendor": "VerseVIEW",
+  "url": "https://verseview.com",
+  "pricing_model": "Free",
+  "price": "Free",
+  "os": [
+   "Windows",
+   "macOS",
+   "Linux"
+  ],
+  "ndi": "Unknown (network lower-thirds for OBS/vMix)",
+  "outputs": "Unknown",
+  "songselect": "Unknown",
+  "free_tier": "Yes",
+  "verified": "2026-10-16",
+  "sources": [
+   "https://verseview.com/",
+   "https://www.itechguides.com/products/verseview/"
+  ],
+  "notes": "OS list from third-party summary; confirm on vendor download page."
+ }
 ]
